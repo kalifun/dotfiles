@@ -6,6 +6,9 @@ mouse = false
 auto-save = true
 bufferline = "multiple"
 true-color = true
+cursorline = true
+color-modes = true
+gutters = ["diagnostics", "line-numbers", "spacer"]
 
 [editor.cursor-shape]
 insert = "bar"
@@ -14,3 +17,11 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+
+[editor.lsp]
+display-messages = true
