@@ -8,7 +8,8 @@ bufferline = "multiple"
 true-color = true
 cursorline = true
 color-modes = true
-gutters = ["diagnostics", "line-numbers", "spacer"]
+#This is the default setting
+#gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
 
 [editor.cursor-shape]
 insert = "bar"
