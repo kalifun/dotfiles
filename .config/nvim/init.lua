@@ -1,2 +1,1 @@
--- bootstarp lazy.nvim
-require("core")
+require("config")

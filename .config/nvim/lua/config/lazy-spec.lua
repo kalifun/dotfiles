@@ -1,0 +1,5 @@
+return {
+    spec = {
+        { import = "plugins" },
+    },
+}
