@@ -1,5 +1,9 @@
 return {
     "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function ()
+        require("trouble").setup()
+    end,
     cmd = { "TroubleToggle", "Trouble" },
     opts = { use_diagnostic_signs = true },
     keys = {
