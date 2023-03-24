@@ -1,9 +1,7 @@
 return {
-	"xiyaowong/nvim-transparent",
-	event = "VimEnter",
-	config = function()
-		require("transparent").setup({
-			enable = true,
-		})
-	end,
+    "xiyaowong/nvim-transparent",
+    event = "VimEnter",
+    config = function()
+        require("transparent").setup({})
+    end,
 }
