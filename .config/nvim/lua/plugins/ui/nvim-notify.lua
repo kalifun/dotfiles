@@ -18,4 +18,9 @@ return {
             return math.floor(vim.o.columns * 0.75)
         end,
     },
+    config = function()
+        require("notify").setup({
+            background_colour = "#000000",
+        })
+    end,
 }
