@@ -62,9 +62,9 @@ return {
                     {
                         "diff",
                         symbols = {
-                            added = icons.git.added,
-                            modified = icons.git.modified,
-                            removed = icons.git.removed,
+                            added = icons.git.Add,
+                            modified = icons.git.Mod,
+                            removed = icons.git.Remove,
                         },
                     },
                 },
