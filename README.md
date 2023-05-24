@@ -8,4 +8,20 @@ Configuration item content:
 
 ## Screenshots  
 
-![](./images/terminal.png)
+### Neovim
+
+#### alpha
+
+![](./images/nvim/alpha.png)
+
+#### editor
+
+![](./images/nvim/editor.png)
+
+#### telescope
+
+![](./images/nvim/telescope.png)
+
+### Helix  
+
+![](./images/helix/terminal.png)
