@@ -1,9 +1,7 @@
-require("config.bootstrap")
-require("config.options")
-require("config.keymaps")
+local utils = require("kai.libs.utils")
 
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
--- setup lazy
-local lazy_spec = require("config.lazy-spec")
-local lazy_opts = require("config.lazy-options")
-require("lazy").setup(lazy_spec, lazy_opts)
+utils.set_vim_opts(require("kai.config.options"))
+utils.set_keymaps(require("kai.config.keymaps"))
