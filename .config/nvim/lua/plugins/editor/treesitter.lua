@@ -29,11 +29,12 @@ return {
                 -- other languages
                 "go",
                 "gomod",
+                "rust",
 
                 -- other
                 "comment",
                 "regex",
-                "help",
+                "vimdoc",
             },
             sync_install = false,
             highlight = {

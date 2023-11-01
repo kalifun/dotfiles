@@ -2,7 +2,7 @@ return {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     opts = function(plugin)
-        local icons = require("libs.icons")
+        local icons = require("kai.libs.icons")
 
         local function fg(name)
             return function()
