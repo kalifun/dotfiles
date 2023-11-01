@@ -104,7 +104,7 @@ return {
 			}),
 			formatting = {
 				format = function(_, item)
-					local icons = require("libs.icons").kinds
+					local icons = require("kai.libs.icons").kinds
 					if icons[item.kind] then
 						item.kind = icons[item.kind] .. item.kind
 					end
