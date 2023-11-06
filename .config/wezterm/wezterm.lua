@@ -22,6 +22,7 @@ return {
 	--- launch_menu                  = launch_menu,
 	keys = {
 		{ key = "z", mods = "ALT", action = wezterm.action.ShowLauncher },
+		{ key = 'j', mods = 'CMD', action = wezterm.action.SendString '\x02\x54' }, -- open t - tmux smart session manager
 	},
 	window_decorations = "RESIZE",
 	hide_tab_bar_if_only_one_tab = true,

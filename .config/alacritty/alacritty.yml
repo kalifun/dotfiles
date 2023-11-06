@@ -100,6 +100,9 @@ schemes:
 
 colors: *Dracula
 
+key_bindings:
+  - { key: K, mods: Command, chars: "\x02\x54" } # open t - tmux smart session manager
+  
 # key_bindings:
 #     # (Windows, Linux, and BSD only)
 #   - { key: V,         mods: Control|Shift, action: Paste                       }

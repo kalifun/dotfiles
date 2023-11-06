@@ -18,13 +18,14 @@ Prerequisites
 - bash (>= 4.0)
 - zoxide
 - fzf (>=0.35.0)
+- yq
 
 ```bash
 brew install neovim
 brew install tmux
 brew install --cask wezterm
 brew tap arl/arl
-brew install gitmux bash zoxide fzf
+brew install gitmux bash zoxide fzf yq
 ```
 Tmux uses tpm to manage plug-ins, so you remember to perform plug-in installation(`prefix` + `I`).
 
@@ -48,3 +49,9 @@ Tmux uses tpm to manage plug-ins, so you remember to perform plug-in installatio
 ### Helix  
 
 ![](./images/helix/terminal.png)
+
+### Tmux
+
+> `t` is a smart tmux session manager and `gitmux` is tmux status bar 
+
+![](./images/tmux/dashboard.png)
