@@ -100,6 +100,19 @@ return {
             setup = {},
         },
         config = function(_, opts)
+            -- setup keymaps on attach
+            require("kai.libs.utils").lsp_on_attach(function(client, buffer)
+                if client.name == "copilot" or client.name == "null-ls" then
+                    return
+                end
+                KM.on_attach(client, buffer)
+                if not client.server_capabilities.inlayHintProvider then
+                    return
+                else
+                    vim.lsp.inlay_hint(buffer)
+                end
+            end)
+
             -- setup servers
             local servers = opts.servers
             local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -208,9 +221,9 @@ return {
         dependencies = { "neovim/nvim-lspconfig" },
         config = function()
             -- handlers
-            vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
-            vim.lsp.handlers["textDocument/signatureHelp"] =
-                vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
+            -- vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
+            -- vim.lsp.handlers["textDocument/signatureHelp"] =
+            --     vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
 
             -- lsp signature configs
             local signature_config = {
