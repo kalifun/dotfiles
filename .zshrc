@@ -122,3 +122,19 @@ export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bot
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/llvm/lib"
 export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
+# ~/.tmux/plugins
+export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
+# ~/.config/tmux/plugins
+export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
+
+# nvim
+alias v='nvim'
+
+# init zoxide 
+eval "$(zoxide init zsh)"
+
+export _ZO_DATA_DIR="$HOME/Library/Application Support"
+export _ZO_ECHO=1
+export _ZO_EXCLUDE_DIRS="$HOME"
+export _ZO_RESOLVE_SYMLINKS=1
