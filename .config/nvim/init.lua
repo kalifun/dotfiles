@@ -16,7 +16,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     spec = {
-        { import = "plugins.theme"}
+        { import = "plugins.theme"},
+        { import = "plugins.ui"}
     },
     default = {
         -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
