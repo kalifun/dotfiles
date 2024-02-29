@@ -138,3 +138,7 @@ export _ZO_DATA_DIR="$HOME/Library/Application Support"
 export _ZO_ECHO=1
 export _ZO_EXCLUDE_DIRS="$HOME"
 export _ZO_RESOLVE_SYMLINKS=1
+
+
+# other bin 
+export PATH=$HOME/.config/bin:$PATH
